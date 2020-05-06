@@ -87,7 +87,7 @@ list-style-image: url(./images/checked.png);
 
   ```javascript
   /* html */
-  <img src="./images/desktop.jpg" alt="" onmousewheel="trturn zoom(this)" />
+  <img src="./images/desktop.jpg" alt="" onmousewheel="return zoom(this)" />
 
   /* javascript */
   function zoom(el) {
@@ -143,9 +143,9 @@ object-position: left top;
 /* 
   <area shape="rect/circle/poly" href="" coords="" target="_blank/_parent/_self/_top"> 
   shape: 规定区域的形状;  
-  href: 目标url;  
+  href: 目标 url;  
   coords: 坐标; shape="rect" => x1,y1,x2,y2; shape="circ" => x,y,radius
-  target: 在何处打开目标url
+  target: 在何处打开目标 url
 */
 <img src="../asset/images/china.jpg" usemap="#mapname"/>
 <map name="mapname" id="mapname">
@@ -155,11 +155,13 @@ object-position: left top;
 
 ## 3 像素bug
 
-描述：img标签渲染之后下方会出现几个像素（谷歌是4px, 火狐3.5px）的空白；  
-原因：img是行内元素，默认display：inline; 它与文本的默认行为类似，下边缘是与基线对齐，而不是贴紧容器下边缘，所以会有几像素的空白；  
+描述：img 标签渲染之后下方会出现几个像素（谷歌是 4px, 火狐 3.5px）的空白；  
+原因：img 是行内元素，默认display：inline; 它与文本的默认行为类似，下边缘是与基线对齐，而不是贴紧容器下边缘，所以会有几像素的空白；  
 解决办法：
 
-1. 把img设置为display: block;
-2. 给img和其父元素都设置vertical-align: top；让其top对齐而不是baseline对齐；
-3. 给img父元素设置line-height: 0;
+1. 把 img 设置为display: block;
+2. 给 img 和其父元素都设置 vertical-align: top；让其 top 对齐而不是 baseline 对齐；
+3. 给 img 父元素设置 line-height: 0;
+
+
 

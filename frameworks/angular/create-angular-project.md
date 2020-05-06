@@ -2,7 +2,7 @@
 description: 本文记录一次搭建angular项目的过程，
 ---
 
-# angular项目搭建
+# angular 项目搭建
 
 前置条件，已安装 node 和 git 
 
@@ -76,16 +76,50 @@ description: 本文记录一次搭建angular项目的过程，
   }
 ```
 
-引入 angular-bootstrap
+### 引入 angular-bootstrap
 
-1. 在项目中安装 bootstrap： npm install bootstrap;
-2. 安装 angular-bootstrap：npm install ngx-bootstrap;
-3. 
-在 angular 中引入 angular-bootstrap 样式库
+1. 在项目中安装 bootstrap： `npm install bootstrap`;
+2. 安装 angular-bootstrap：`npm install ngx-bootstrap`;
+3. 在组件中使用eg:  `import  { ModalModule } from 'ngx-bootstrap/modal'` 为了便于管理，可以统一在 shareModule 中导出可能使用到的 angular-bootstrap 组件，然后在具体的组件中导入 shareModule 即可； 
 
-引入 icon-font
+### 引入 icon-font
+
+1. 把阿里巴巴图标库中的项目图标下载至本地；
+2. 解压图标文件，将 .eot  .svg  .ttf  .woff .woff2 后缀文件拷贝到 angular 项目的 asset/fonts文件夹下；
+3. 在公共样式文件夹下新建 `_fonts.scss` 并导入到 `main.scss;`
+4. 打开下载的字体文件中的`demo_index.html`，把第一、二步中的代码复制到 `_fonts.scss` , 字体文件 url 路径改为当前字体文件所在的路径；再打开 iconfont.css 把所有图标对应的样式复制到`_fonts.scss`;
+
+   ```css
+   /* _fonts.scss */
+   @font-face {
+       font-family: 'iconfont';
+       src: url('../../assets/fonts/iconfont.eot');
+       src: url('../../assets/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/iconfont.woff2') format('woff2'),
+           url('../../assets/fonts/iconfont.woff') format('woff'),
+           url('../../assets/fonts/iconfont.ttf') format('truetype'),
+           url('../../assets/fonts/iconfont.svg#iconfont') format('svg');
+   }
+   .iconfont {
+       font-family: "iconfont" !important;
+       font-size: 16px;
+       font-style: normal;
+       -webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale;
+   }
+
+   .icon-circle-checked:before {
+       content: "\e618";
+    }
+   ```
+
+5.  html 中使用字体图标 `<i class="iconfont  icon-circle-checked"></i>`
 
 引入 echarts
 
-如果你的项目中不需要单元测试，那么可以在
+1. 在项目中安装 echarts： `npm install echarts`;
+2. 安装 ngx-echarts: `npm install ngx-echarts`;
+3. 在组件中导入： `import { NgxEchartsModule } from 'ngx-echarts'`; 也可以在 shareModule 中导出 NgxEchartsModule，这样就不用每次使用图表都单独导入一次；
+
+
 

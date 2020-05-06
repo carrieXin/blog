@@ -2,7 +2,7 @@
 description: 本文记录一次创建vue项目的过程，教你从零开始搭建自己的项目
 ---
 
-# vue项目搭建
+# vue 项目搭建
 
 前置条件：已安装 node.js 和 git
 
@@ -27,11 +27,11 @@ vue create project-name
 
 创建成功后定位到项目文件夹目录，执行  `npm run serve`   运行项目
 
-> 注意：使用 cmd 命令面板选预设选项的时候有颜色提示，而git bash没有
+> 注意：使用 cmd 命令面板选预设选项的时候有颜色提示，而 git bash 没有
 
 ### 图形工具创建
 
-安装好vue之后，在cmd中定位到你想创建项目的文件夹下，输入 `vue ui` 出现图形化创建项目的引导图，然后按需选择配置项。
+安装好 vue 之后，在 cmd 中定位到你想创建项目的文件夹下，输入 `vue ui` 出现图形化创建项目的引导图，然后按需选择配置项。
 
 ![](../../.gitbook/assets/tu-pian%20%282%29.png)
 
@@ -99,7 +99,7 @@ vue create project-name
 
 ### 引入 icon-font
 
-1. 将iconfont图标库\(阿里巴巴矢量图标库\)中项目的字体文件下载至本地 ；  
+1. 将 iconfont 图标库\(阿里巴巴矢量图标库\)中项目的字体文件下载至本地 ；  
 2. 在 asset 文件夹下新建 `fonts` 目录，把下载的  .eot、.svg、.ttf、.woff、.wiff2 字体文件放入 fonts目录中；
 3. 在 asset 文件夹下新建`style/fonts.scss`, 把下载的字体文件 `demo_index.html` 使用步骤中的代码以及`iconfont.css` 中具体图标的样式代码拷贝过来，如下：
 

@@ -1,2 +1,2 @@
-# JavaScript相关
+# JavaScript 相关
 
