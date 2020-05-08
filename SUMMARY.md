@@ -8,8 +8,8 @@
 * [JavaScript](front-end-basics/javascript.md)
 * [CSS](front-end-basics/css/README.md)
   * [position-sticky 使用场景](front-end-basics/css/position-sticky.md)
-  * [CSS 命名规范](front-end-basics/css/css-name-rules.md)
-  * [图片相关样式](front-end-basics/css/css-image.md)
+  * [CSS 代码规范](front-end-basics/css/coding-style.md)
+  * [图片相关样式](front-end-basics/css/image-style.md)
 
 ## 框架学习 <a id="frameworks"></a>
 
@@ -22,7 +22,7 @@
 
 * [JavaScript 相关](translations/javascript-xiang-guan/README.md)
   * [【翻译】JavaScript之回调](translations/javascript-xiang-guan/javascript-callback.md)
-* [专业词汇中英对照表](translations/vocabulary.md)
+* [专业词汇中英对照表](translations/glossary.md)
 
 ## 其他 <a id="others"></a>
 

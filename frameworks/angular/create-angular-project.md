@@ -115,7 +115,7 @@ description: 本文记录一次搭建angular项目的过程，
 
 5.  html 中使用字体图标 `<i class="iconfont  icon-circle-checked"></i>`
 
-引入 echarts
+### 引入 echarts
 
 1. 在项目中安装 echarts： `npm install echarts`;
 2. 安装 ngx-echarts: `npm install ngx-echarts`;
