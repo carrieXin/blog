@@ -3,7 +3,7 @@
 ## 展示图片
 
 1. 设置背景图片;
-2. 使用 &lt;image /&gt; 标签;
+2. 使用 &lt;img /&gt; 标签;
 3. ::after 和 ::before 设置图片;
 4. 鼠标 hover 自定义光标样式;
 5. border-image 自定义边框图案;
