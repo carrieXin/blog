@@ -163,5 +163,24 @@ object-position: left top;
 2. 给 img 和其父元素都设置 vertical-align: top；让其 top 对齐而不是 baseline 对齐；
 3. 给 img 父元素设置 line-height: 0;
 
+## 滤镜属性
+
+filter 属性可以调节图片参数，如设置图片灰度、透明度、饱和度等
+
+```javascript
+filter: none | 默认
+        blur(px) | 高斯模糊
+        brightness(%) | 亮度
+        contrast(%) | 对比度
+        drop-shadow() | 阴影
+        grayscale(%) | 灰度
+        hue-rotate() | 色相旋转
+        invert(%) | 反相
+        opacity(%) | 透明度
+        saturate(%) | 饱和度
+        sepia(%) | 深褐色
+        url();
+```
+
 
 
