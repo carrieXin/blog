@@ -165,7 +165,7 @@ object-position: left top;
 
 ## 滤镜属性
 
-filter 属性可以调节图片参数，如设置图片灰度、透明度、饱和度等
+filter 属性可以调节元素的视觉效果，如设置图片灰度、透明度、饱和度等
 
 ```javascript
 filter: none | 默认
