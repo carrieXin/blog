@@ -21,7 +21,7 @@ background: url(../asset/img/logo.jpg) no-repeat center;
 background: url(../asset/img/logo.jpg) repeat-x;
 
 /* background 是以下属性值的缩写
-    img: 背景图片 
+    image: 背景图片 
     color: 背景颜色 
     repeat: 定义图片重复的方式 可选值 repeat-x/repeat-y/repeat/space/round/no-repeat
     size: 背景图片大小 可选值 contain/cover/百分比/具体像素
@@ -70,6 +70,16 @@ list-style-image: url(./images/checked.png);
 ```
 {% endtab %}
 {% endtabs %}
+
+此外还有一个 `image-set`  属性可以为不同设备设置不同的图片，如
+
+```javascript
+background-image: image-set(
+    "test.png" 1x, // 普通屏幕时使用
+    "test-2x.png" 2x, // 高分辨率屏时使用如Retina屏幕
+    "test-print.png" 600dpi  // 更高分辨率屏时使用如印刷
+)
+```
 
 ## 图片缩放
 
